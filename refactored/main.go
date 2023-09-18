@@ -17,8 +17,8 @@ const (
 	errDuplicateStartAndEnd  = "Error: duplicates of ##start and/or ##end in the file."
 	errLineBeginsWithL       = "Error: line begins with 'L'"
 	errLineBeginsWithHash    = "Error: line begins with '#'"
-	errLineDoesNotContain3   = "Line %d does not contain 3 fields: %s"
-	errFieldsNotPositiveInts = "Line %d does not contain 3 valid fields with 2 integers"
+	errLineDoesNotContain3   = "Line %d does not contain 3 fields: %s\n"
+	errFieldsNotPositiveInts = "Line %d does not contain 3 valid fields with 2 integers\n"
 )
 
 // Check if a file has a .txt extension
