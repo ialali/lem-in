@@ -1,0 +1,17 @@
+12
+##start
+start 0 3
+B 2 3 
+C 4 3
+D 0 1
+E 2 1
+##end
+end 4 1
+start-B
+start-D
+B-C
+B-E
+B-end
+D-E
+C-end
+E-end
