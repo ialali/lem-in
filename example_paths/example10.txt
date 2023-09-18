@@ -1,0 +1,29 @@
+6
+##start
+A 0 3
+B 2 3
+C 4 3
+D 0 1
+E 2 1
+##end
+F 4 1
+
+A-B
+A-D
+B-C
+B-D
+B-F
+C-F
+D-E
+E-F
+
+// PREDICITONS
+ant		turn	steps/total
+L1		 2			2		2
+L2		 3			2		4
+L3		 4			3		7
+L4		 4			2		9
+L5		 5			2		11
+L6		 5			3		14
+L7		 6			2		16
+L8		 6			2		18
