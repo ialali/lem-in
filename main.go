@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// initialize a Node struct for the number of ants, all given rooms(nodes), that have a Name, X-Y coordinates, and connections to other nodes
+// initialize a Node struct for the numerr := graph.Render(chart.PNG, os.Stdout)ber of ants, all given rooms(nodes), that have a Name, X-Y coordinates, and connections to other nodes
 type AntFarm struct {
 	Ants int
 	RmS	string
