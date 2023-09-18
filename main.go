@@ -345,7 +345,7 @@ func main() {
 			field3, _ := strconv.Atoi(fields[2])
 			
 			//Check if fields 2 & 3 are positive integers
-			if field2 <= 0 || field3 <= 0 {
+			if field2 < 0 || field3 < 0 {
 				fmt.Printf("Line %d, Fields 2 and 3 must be positive integers: %s\n", lineNum, line)
 		} else {
 				fmt.Printf("Line %d does contain 3 valid fields with 2 positive integers\n", lineNum)
