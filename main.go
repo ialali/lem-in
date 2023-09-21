@@ -3,7 +3,8 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"lemin/tests" // ref pkg tests from tests dir
+
+	// "lemin/errhand" ref pkg tests from tests dir
 	"os"
 	"strconv"
 	"strings"
