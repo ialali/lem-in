@@ -142,4 +142,4 @@ Testing the Go code is crucial to ensure its correctness and reliability. In add
 
 ### Functions used in program
 
-<!-- [link to Functions.md file](/Functions.md) -->
+[link to Functions.md file](/Functions.md)
