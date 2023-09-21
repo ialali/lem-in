@@ -6,12 +6,12 @@ C 4 3
 D 0 1
 E 2 1
 ##end
-end 4 1
+en 4 1
 st-B
 st-D
 B-C
 B-E
-B-end
+B-en
 D-E
-C-end
-E-end
+C-en
+E-en
