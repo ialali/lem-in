@@ -64,6 +64,9 @@ BSF - Breath First Search : Graph Data Structures
 - [lem-in audit questions](https://github.com/01-edu/public/tree/master/subjects/lem-in)
 
 - [LEM-IN: by Jamie Dawson](https://medium.com/@jamierobertdawson/lem-in-finding-all-the-paths-and-deciding-which-are-worth-it-2503dffb893)
+
+-[LEM-IN: by Maksim Mikhailov](https://mer.pw/projects/lem-in)
+
 - [Graph Data Structures: Junmin Lee](https://www.youtube.com/watch?v=JPD1OVgoa0Q)
 
 - [Dijkstra Shortest Path Algorithm](https://www.youtube.com/watch?v=pVfj6mxhdMw)
