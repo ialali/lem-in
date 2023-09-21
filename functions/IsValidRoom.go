@@ -13,7 +13,7 @@ import (
 func IsValidRoom(v, s string, data *Input) error {
 	node := strings.Split(v, " ")
 	if len(node) != 3 { //checks for 3 fields of data name, x, y
-		return errors.New("ERR: invalid format of the room")
+		return errors.New("ERR: invalid format of the room, IsValidRoom")
 	}
 	if strings.ContainsAny(node[0], " #") || node[0][0] == 'L' {
 		return errors.New("ERR: invalid data format, the room can't start with L, # or space")
