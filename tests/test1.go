@@ -15,5 +15,5 @@ func HasTXTExtension(filename string) error {
 		fmt.Println(filename, "has a .txt extension")
 		return nil
 	}
-	return errors.New("not .txt")
+	return errors.New("not .txt file")
 }
