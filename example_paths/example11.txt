@@ -1,17 +1,17 @@
 12
 ##start
-st 0 3
+A 0 3
 B 2 3 
 C 4 3
 D 0 1
 E 2 1
 ##end
-en 4 1
-st-B
-st-D
+F 4 1
+A-B
+A-D
 B-C
 B-E
-B-en
+B-F
 D-E
-C-en
-E-en
+C-F
+E-F
