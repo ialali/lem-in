@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"lemin/tests" // ref pkg tests from tests dir
 	"os"
 	"strconv"
 	"strings"
@@ -20,9 +21,9 @@ type AntFarm struct {
 }
 
 // 1. CHECK FILENAME HAS .txt EXTENSION
-func hasTXTExtension(filename string) bool {
-	return strings.HasSuffix(filename, ".txt")
-}
+// func hasTXTExtension(filename string) bool {
+// 	return strings.HasSuffix(filename, ".txt")
+// }
 // 2. CHECK FILE CONTAINS A MINIMUM OF 6 LINES
 func fileContainsMinLines(filePath string, minLines int) (bool, error) {
 	file, err := os.Open(filePath)
@@ -225,6 +226,7 @@ func checkLinesForHash(filePath string) (bool, error) {
 
 
 func main() {
+	fmt.Println(tests.Hello())
 	// 1. Check if there are at least two command line arguments (including the program name).
 	if len(os.Args) < 2 {
 			fmt.Println("Include an external file with extension .txt")
@@ -233,11 +235,15 @@ func main() {
 	// Get the filename from the command line arguments.
 	filename := os.Args[1]
 
-	if hasTXTExtension(filename) {
-			fmt.Println(filename, "has a .txt extension")
-	} else {
-			fmt.Println(filename, "does not have a .txt extension")
-			return //exit program
+	// if tests.HasTXTExtension(filename) {
+	// 		fmt.Println(filename, "has a .txt extension")
+	// } else {
+	// 		fmt.Println(filename, "does not have a .txt extension")
+	// 		return //exit program
+	// }
+	if err := tests.HasTXTExtension(filename); err != nil {
+		fmt.Println(err.Error())
+		return 
 	}
 
 	// 2. Check file has 6 lines of data
