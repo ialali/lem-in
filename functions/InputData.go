@@ -6,14 +6,14 @@ import (
 	"strings"
 )
 
-// v = lc (line content) data
+// lc (line content) data
 
 // InputData extracts relevant data from the input file and populates the Input struct
 func InputData(data *Input, dataFile []string) error {
 	for i, lc := range dataFile {
 		switch {
 		case i == 0:
-			ants, err := strconv.Atoi(v)
+			ants, err := strconv.Atoi(lc)
 			if err != nil || ants < 1 { //must be at least 1 ant
 				return errors.New("ERR: invalid number of Ants")
 			}
