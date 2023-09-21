@@ -16,7 +16,7 @@ func main() {
 	}
 
 	// Read the file
-	content, err := os.ReadFile("examples/" + os.Args[1])
+	content, err := os.ReadFile("example_paths/" + os.Args[1])
 	if err != nil {
 		log.Fatal(err)
 	}
