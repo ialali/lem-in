@@ -1,0 +1,106 @@
+
+package lemin_test
+
+import (
+	"testing"
+	lemin "lemin/errhand"
+)
+// Valid input with name, x, and y coordinates
+func TestIsValidRoom_ValidInput(t *testing.T) {
+    vr := "RoomName 1 2"
+    ser := "start"
+    data := &Input{}
+
+    err := IsValidRoom(vr, ser, data)
+
+    if err != nil {
+        t.Errorf("Expected no error, but got: %v", err)
+    }
+
+    if data.StartR != "RoomName" {
+        t.Errorf("Expected StartR to be 'RoomName', but got: %s", data.StartR)
+    }
+}
+
+// Adding start room with valid input
+func TestIsValidRoom_AddingStartRoomWithValidInput(t *testing.T) {
+    data := &Input{}
+    vr := "RoomName 1 2"
+    ser := "start"
+    
+    err := IsValidRoom(vr, ser, data)
+    
+    if err != nil {
+        t.Errorf("Expected no error, but got %v", err)
+    }
+    
+    if data.StartR != "RoomName" {
+        t.Errorf("Expected StartR to be 'RoomName', but got %s", data.StartR)
+    }
+}
+
+
+// Adding end room with valid input
+func test_add_end_room_with_valid_input(t *testing.T) {
+    data := &Input{}
+    vr := "RoomName 1 2"
+    ser := "end"
+    err := IsValidRoom(vr, ser, data)
+    if err != nil {
+        t.Errorf("Expected no error, but got: %v", err)
+    }
+    if data.EndR != "RoomName" {
+        t.Errorf("Expected EndR to be 'RoomName', but got: %s", data.EndR)
+    }
+}
+
+
+// Adding regular room with valid input
+func TestIsValidRoom_AddingRegularRoomWithValidInput(t *testing.T) {
+    // Create a new Input struct
+    data := &Input{}
+
+    // Call the IsValidRoom function with valid input
+    err := IsValidRoom("Room 1 2", "start", data)
+
+    // Check that the error is nil
+    if err != nil {
+        t.Errorf("Expected no error, but got: %v", err)
+    }
+
+    // Check that the StartR field is set correctly
+    if data.StartR != "Room" {
+        t.Errorf("Expected StartR to be 'Room', but got: %s", data.StartR)
+    }
+
+    // Check that the Rooms slice contains the correct value
+    if len(data.Rooms) != 1 || data.Rooms[0] != "Room" {
+        t.Errorf("Expected Rooms to contain ['Room'], but got: %v", data.Rooms)
+    }
+
+    // Check that the Coords slice contains the correct value
+    if len(data.Coords) != 1 || data.Coords[0][0] != "1" || data.Coords[0][1] != "2" {
+        t.Errorf("Expected Coords to contain [['1', '2']], but got: %v", data.Coords)
+    }
+}
+
+
+// Adding multiple regular rooms with valid input
+func test_add_multiple_regular_rooms_with_valid_input(t *testing.T) {
+    data := &Input{}
+    err := IsValidRoom("Room1 1 1", "regular", data)
+    if err != nil {
+        t.Errorf("Expected no error, but got %v", err)
+    }
+    err = IsValidRoom("Room2 2 2", "regular", data)
+    if err != nil {
+        t.Errorf("Expected no error, but got %v", err)
+    }
+    err = IsValidRoom("Room3 3 3", "regular", data)
+    if err != nil {
+        t.Errorf("Expected no error, but got %v", err)
+    }
+    if len(data.Rooms) != 3 {
+        t.Errorf("Expected 3 rooms, but got %d", len(data.Rooms))
+    }
+}
