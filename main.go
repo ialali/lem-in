@@ -1,8 +1,5 @@
 package main
 
-// lem "lem/methods"
-// lem to lemin
-
 import (
 	"fmt"
 	lemin "lemin/functions"
