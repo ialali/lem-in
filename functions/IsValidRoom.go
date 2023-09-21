@@ -10,8 +10,8 @@ import (
 // ser (start, end, regular room)
 
 // IsValidRoom validates and processes a room entry
-func IsValidRoom(v, s string, data *Input) error {
-	node := strings.Split(v, " ")
+func IsValidRoom(vr, ser string, data *Input) error {
+	node := strings.Split(vr, " ")
 	if len(node) != 3 { //checks for 3 fields of data name, x, y
 		return errors.New("ERR: invalid format of the room, IsValidRoom")
 	}
@@ -30,7 +30,7 @@ func IsValidRoom(v, s string, data *Input) error {
 	if !IsValidCoords(nodeCoord, data) {
 		return errors.New("ERR: invalid data format, room with such coordinates already exists")
 	}
-	switch s {
+	switch ser {
 	case "start":
 		data.StartR = node[0]
 	case "end":
