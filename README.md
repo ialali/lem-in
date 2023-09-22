@@ -65,11 +65,14 @@ BSF - Breath First Search : Graph Data Structures
 
 - [LEM-IN: by Jamie Dawson](https://medium.com/@jamierobertdawson/lem-in-finding-all-the-paths-and-deciding-which-are-worth-it-2503dffb893)
 
--[LEM-IN: by Maksim Mikhailov](https://mer.pw/projects/lem-in)
+- [LEM-IN: by Maksim Mikhailov](https://mer.pw/projects/lem-in)
 
 - [Graph Data Structures: Junmin Lee](https://www.youtube.com/watch?v=JPD1OVgoa0Q)
 
+- [Golang Binary Search Tree](https://www.youtube.com/watch?v=D3XlKCii7L4)
+
 - [Dijkstra Shortest Path Algorithm](https://www.youtube.com/watch?v=pVfj6mxhdMw)
+
 - [Edmonds-Karp Algorithm](https://youtu.be/RppuJYwlcI8)
 
 ### Setup
@@ -132,7 +135,7 @@ The vertical columns indicates the amount of steps each ant takes to reach the e
 ### How To Run
 
 ```
-./run_examples.sh
+go run main.go <filename>
 ```
 
 ## TESTS
