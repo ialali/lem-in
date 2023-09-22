@@ -1,6 +1,7 @@
 package lemin
 
 import (
+	lemin "lemin/functions"
 	"testing"
 )
 
@@ -26,10 +27,10 @@ func TestGetData(t *testing.T) {
     }
 
     // Create an empty Input struct
-    data := &Input{}
+    data := &lemin.Input{}
 
     // Test the GetData function
-    err := GetData(data, dataFile)
+    err := lemin.GetData(data, dataFile)
     if err != nil {
         t.Errorf("Expected no error, but got an error: %v", err)
     }
@@ -39,10 +40,10 @@ func TestGetData(t *testing.T) {
         t.Errorf("Expected Ants to be 4, but got %d", data.Ants)
     }
     if data.StartR != "0" {
-        t.Errorf("Expected StartR to be '0', but got '%s'", data.StartR)
+        t.Errorf("Expected StartRoom to be '0', but got '%s'", data.StartR)
     }
     if data.EndR != "5" {
-        t.Errorf("Expected EndR to be '5', but got '%s'", data.EndR)
+        t.Errorf("Expected EndRoom to be '5', but got '%s'", data.EndR)
     }
     if len(data.Rooms) != 7 {
         t.Errorf("Expected 7 rooms, but got %d", len(data.Rooms))
