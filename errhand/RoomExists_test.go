@@ -2,9 +2,11 @@ package lemin
 
 import (
 	"testing"
+	lemin "lemin/functions"
 )
 
-func TestRoomExists(t *testing.T) {
+
+	// Test case 1: Check for an existing roomfunc TestRoomExists(t *testing.T) {
 	// Create a sample slice of rooms
 	rooms := []*Room{
 		&Room{Key: "Room1"},
