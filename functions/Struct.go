@@ -12,7 +12,7 @@ type Room struct {
 	Key      string
 	Children []*Room
 }
-// Children = Connections between rooms
+// Children = Connections between parent Nodes
 
 // P is slice of pointers to the Room struct
 type Path struct {
