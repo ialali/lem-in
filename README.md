@@ -140,7 +140,8 @@ go run main.go <filename>
 
 ## TESTS
 
-<!-- This document provides an explanation of the test cases for all methods in the `lemin` package. -->
+<!-- This document provides an explanation of the test cases for all functions in the `lemin` package. -->
+<!-- [link to Tests.md file](/errhand/Tests.md) -->
 
 ### Testing Go Code and Generating Reports :
 
