@@ -22,12 +22,11 @@ After running the go test command, Go will execute the test functions and displa
 
 ### Test for the AddEdge function:
 
-creates a sample graph with two rooms ("Room1" and "Room2") and then test various cases:
-Adding a valid edge between "Room1" and "Room2."
-Attempting to add the same edge again, which should result in an error.
-Attempting to add an edge between a room ("Room3") that doesn't exist in the graph, which should also result in an error.
+Creates a sample graph with two rooms ("Room1" and "Room2") and then test various cases:
 
-You can run this test using the go test command in your terminal to ensure that the AddEdge function behaves as expected.
+- Adding a valid edge between "Room1" and "Room2."
+- Attempting to add the same edge again, which should result in an error.
+- Attempting to add an edge between a room ("Room3") that doesn't exist in the graph, which should also result in an error.
 
 ---
 
@@ -35,20 +34,19 @@ You can run this test using the go test command in your terminal to ensure that 
 
 Create a sample graph with two existing rooms ("Room1" and "Room2").
 Test two cases:
-Adding a valid room ("Room3") to the graph.
-Attempting to add an existing room ("Room1") to the graph again, which should result in an error.
-You can run this test using the go test command to ensure that the AddRoom function behaves as expected.
+
+- Adding a valid room ("Room3") to the graph.
+- Attempting to add an existing room ("Room1") to the graph again, which should result in an error.
 
 ---
 
 ### Test for the GetData function:
 
 Create a sample dataFile containing data similar to what you provided.
-Create an empty Input struct.
-Test the GetData function with the sample data and check if it populates the data struct correctly.
-Verify that various fields in the data struct (e.g., Ants, StartR, EndR, Rooms, and Links) have the expected values.
 
-Run this test using the go test command to ensure that the GetData function behaves as expected.
+- Create an empty Input struct.
+- Test the GetData function with the sample data and check if it populates the data struct correctly.
+- Verify that various fields in the data struct (e.g., Ants, StartR, EndR, Rooms, and Links) have the expected values.
 
 ---
 
@@ -56,11 +54,12 @@ Run this test using the go test command to ensure that the GetData function beha
 
 Create a sample Input struct.
 Test several cases:
-Valid room with coordinates.
-Room with an invalid format.
-Room with negative coordinates.
-Room with coordinates that are already in use (duplicate).
-Room with a reserved starting character ('#').
+
+- Valid room with coordinates.
+- Room with an invalid format.
+- Room with negative coordinates.
+- Room with coordinates that are already in use (duplicate).
+- Room with a reserved starting character ('#').
 
 Check if the function returns the expected errors or no errors based on the test cases.
 
@@ -70,11 +69,12 @@ Check if the function returns the expected errors or no errors based on the test
 
 Create a sample Input struct.
 Test several cases:
-Valid room with coordinates.
-Room with an invalid format.
-Room with negative coordinates.
-Room with coordinates that are already in use (duplicate).
-Room with a reserved starting character ('#').
+
+- Valid room with coordinates.
+- Room with an invalid format.
+- Room with negative coordinates.
+- Room with coordinates that are already in use (duplicate).
+- Room with a reserved starting character ('#').
 
 Check if the function returns the expected errors or no errors based on the test cases.
 
