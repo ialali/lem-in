@@ -142,7 +142,7 @@ go run main.go <filename>
 
 This document provides an explanation of the test cases for all functions in the `lemin` package.
 
-<!-- [link to Tests.md file](/errhand/Tests.md) -->
+[link to Tests.md file](/errhand/Tests.md)
 
 ### Testing Go Code and Generating Reports :
 
