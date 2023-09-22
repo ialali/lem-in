@@ -1,6 +1,0 @@
-package lemin
-
-import (
-  "testing"
-)
-
