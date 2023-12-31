@@ -12,7 +12,7 @@ func AddEdge(graph *Graph, fromRm, toRm string) error {
 
 	// error handling: current room, next room don't exist; from-to Room are same 
 	if fromRoom == nil || toRoom == nil || fromRoom == toRoom {
-		err := fmt.Errorf("ERR: invalid edge(%v --> %v)", fromRm, toRm)
+		err := fmt.Errorf("ERROR: invalid data format, invalid edge(%v --> %v)", fromRm, toRm)
 		return err
 	} else if RoomExists(fromRoom.Children, toRm) { //does edge already exist?
 		err := fmt.Errorf("ERR: existing edge(%v --> %v)", fromRm, toRm)
